@@ -118,4 +118,16 @@ describe('even', () => {
 
 describe('odd', () => {
 
+  test('can check if a positive number is odd', () => {
+    expected = true;
+    actual = odd(3);
+    expect(actual).toBe(expected);
+  });
+
+  test('can check if a negative number is odd', () => {
+    expected = true;
+    actual = odd(-5);
+    expect(actual).toBe(expected);
+  });
+
 });
