@@ -114,6 +114,12 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can check if a number is not odd', () => {
+    expected = true;
+    actual = even(15);
+    expect(actual).not.toBe(expected);    // Alternative assertion method
+  })
+
 });
 
 describe('odd', () => {
@@ -129,5 +135,11 @@ describe('odd', () => {
     actual = odd(-5);
     expect(actual).toBe(expected);
   });
+
+  test('can check if a number is not even', () => {
+    expected = true;
+    actual = odd(12);
+    expect(actual).not.toBe(expected);   // Alternative assertion method
+  })
 
 });
