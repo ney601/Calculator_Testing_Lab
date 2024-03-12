@@ -17,15 +17,21 @@ describe('sum', () => {
   });
 
   test('can add two large positive numbers', () => { 
-    
+    expected = 2500000;
+    actual = sum(1500000, 1000000);
+    expect(actual).toBe(expected);
   });
 
-  test.skip('can add two negative numbers', () => {
-    
+  test('can add two negative numbers', () => {
+    expected = -5;
+    actual = sum(-2, -3);
+    expect(actual).toBe(expected);
   });
 
-  test.skip('can add zero', () => {
-    
+  test('can add zero', () => {
+    expected = 3;
+    actual = sum(3, 0);
+    expect(actual).toBe(expected);
   });
 
 });
