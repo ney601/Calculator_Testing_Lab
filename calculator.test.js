@@ -72,7 +72,7 @@ describe('divide', () => {
 
   test('can divide two positive numbers', () => {
     expected = 3;
-    cactual = divide(6, 2);
+    actual = divide(6, 2);
     expect(actual).toBe(expected);
   });
 
@@ -85,6 +85,18 @@ describe('divide', () => {
 });
 
 describe('modulus', () => {
+
+  test('can find modulus of two positive numbers', () => {
+    expected = 1;
+    actual = modulus(5, 2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can find modulus of a negative number and a positive number', () => {
+    expected = -1;
+    actual = modulus(-5, 2);
+    expect(actual).toBe(expected);
+  });
 
 });
 
