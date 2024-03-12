@@ -70,6 +70,18 @@ describe('multiply', () => {
 
 describe('divide', () => {
 
+  test('can divide two positive numbers', () => {
+    expected = 3;
+    cactual = divide(6, 2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide a negative number by a positive number', () => {
+    expected = -3;
+    actual = divide(-6, 2);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('modulus', () => {
