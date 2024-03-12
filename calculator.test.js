@@ -49,10 +49,22 @@ describe('subtract', () => {
     actual = subtract(-5, -2);
     expect(actual).toBe(expected);
   });
-  
+
 });
 
 describe('multiply', () => {
+
+  test('can multiply two positive numbers', () => {
+    expected = 10;
+    actual = multiply(5, 2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can multiply a positive and a negative number', () => {
+    expected = -10;
+    actual = multiply(-5, 2);
+    expect(actual).toBe(expected);
+  });
 
 });
 
